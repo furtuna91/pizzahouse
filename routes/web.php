@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pizzas', function () {
+    // return 'pizzas!';
+    // return ['name'=> 'veg pizzas', 'base' => 'classic'];
+    // get data from db
+    return view('pizzas');
+});
