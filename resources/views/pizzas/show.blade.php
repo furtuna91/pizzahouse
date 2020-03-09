@@ -1,8 +1,16 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="flex-center full-height">
-        <div class="container">
+<div class="flex-center full-height">
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="{{ route('pizza.index') }}" class="breadcrumb">Pizzas</a>
+                <a href="#!" class="breadcrumb">Pizza</a>
+              </div>
+            </div>
+          </nav>
             <h1 class="center-align">Pizza List</h1>
             <div class="divider"></div>
             <div class="row">
