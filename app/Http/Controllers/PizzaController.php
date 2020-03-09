@@ -17,7 +17,7 @@ class PizzaController extends Controller
         //
         // $pizzas = Pizza::all();
         $pizzas = Pizza::latest()->get();
-        return view('pizzas', ['pizzas' => $pizzas]);
+        return view('pizzas.index', ['pizzas' => $pizzas]);
     }
 
     /**
@@ -28,6 +28,7 @@ class PizzaController extends Controller
     public function create()
     {
         //
+        return view('pizzas.create');
     }
 
     /**
@@ -50,7 +51,7 @@ class PizzaController extends Controller
     public function show(Pizza $pizza)
     {
         //
-        return view('details');
+        return view('pizzas.show', ['pizza' => $pizza]);
     }
 
     /**
