@@ -18,6 +18,17 @@
     </head>
     <body>
         @yield('content')
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                {{-- <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li> --}}
+                <li><a href="{{ route('home') }}" class="btn-floating yellow darken-1"><i class="material-icons">home</i></a></li>
+                <li><a href="{{ route('pizza.index') }}" class="btn-floating blue"><i class="material-icons">format_list_bulleted</i></a></li>
+                <li><a href="{{ route('pizza.create') }}" class="btn-floating green"><i class="material-icons">add</i></a></li>
+            </ul>
+        </div>
 
         <footer class="page-footer">
             {{-- <div class="container">

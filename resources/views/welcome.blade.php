@@ -24,6 +24,9 @@
             </div>
             <h1 class="center-align">Pizza House</h1>
             <div class="divider"></div>
+            @if ( null !== session('msg') )
+                <div class="card-panel green">{{ session('msg') }}</div>
+            @endif
         </div>
     </div>
 @endsection

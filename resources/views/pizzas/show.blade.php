@@ -29,6 +29,12 @@
                                 <li class="collection-item">Type - {{ $pizza->type }} <span class="secondary-content"><i class="material-icons">local_pizza</i></span></li>
                                 <li class="collection-item">Base - {{ $pizza->base }} <span class="secondary-content"><i class="material-icons">panorama_fish_eye</i></span></li>
                             </ul>
+                            <h6>Toppings:<h6>
+                                <ul class="collection">
+                                    @foreach ($pizza->toppings as $topping)
+                                        <li class="collection-item">{{ $topping }}</li>
+                                    @endforeach
+                                </ul>
                         </div>
                     </div>
                 </div>

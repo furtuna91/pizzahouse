@@ -8,6 +8,7 @@
 
             <div class="row">
                 <form class="col s12" action="{{ route('pizza.store') }}" method="POST">
+                    @csrf
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="name" name="name" type="text" class="validate">
@@ -32,6 +33,24 @@
                               <option value="thick">Thick</option>
                             </select>
                             <label>Base Type</label>
+                        </div>
+                        <div class="col s12">
+                            <label class="col s3">
+                                <input type="checkbox" name="toppings[]" value="mushrooms" />
+                                <span>Mushrooms</span>
+                            </label>
+                            <label class="col s3">
+                                <input type="checkbox" name="toppings[]" value="peppers" />
+                                <span>Peppers</span>
+                            </label>
+                            <label class="col s3">
+                                <input type="checkbox" name="toppings[]" value="garlic" />
+                                <span>Garlic</span>
+                            </label>
+                            <label class="col s3">
+                                <input type="checkbox" name="toppings[]" value="olives" />
+                                <span>Olives</span>
+                            </label>
                         </div>
                     </div>
                     <button class="btn waves-effect waves-light" type="submit" name="action">Order pizza
