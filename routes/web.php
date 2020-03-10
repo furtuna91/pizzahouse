@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 Route::resource('pizza', 'PizzaController');
 
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');
