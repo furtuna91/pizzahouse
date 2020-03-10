@@ -12,8 +12,8 @@
                 <li class="collection-header"><h4>Pizzas</h4></li>
                 @foreach ($pizzas as $pizza)
                     <li class="collection-item">
-                        <div>{{ $pizza->name }} - {{ $pizza->type }} - {{ $pizza->base }}
-                            <a href="{{ route('pizza.show', $pizza->id ) }}" class="secondary-content"><i class="material-icons">send</i></a>
+                        <div>{{ $pizza->name }}
+                            <a href="{{ route('pizza.show', $pizza->id ) }}" class="secondary-content"><i class="material-icons">local_pizza</i></a>
                         </div>
                     </li>
                 @endforeach
