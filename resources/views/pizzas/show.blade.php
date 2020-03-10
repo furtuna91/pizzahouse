@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
     <div class="flex-center full-height">
@@ -12,7 +12,7 @@
                             <img class="activator responsive-img" src="{{ asset('img/pizza.jpg') }}">
                         </div>
                         <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{ $pizza->name }}<i class="material-icons right">more_vert</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Order for {{ $pizza->name }}<i class="material-icons right">more_vert</i></span>
                             {{-- <p><a href="#">This is a link</a></p> --}}
                             <form action="{{ route('pizza.destroy', $pizza->id) }}" method="POST">
                                 @csrf
