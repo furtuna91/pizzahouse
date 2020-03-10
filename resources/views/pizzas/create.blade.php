@@ -10,11 +10,11 @@
                 <form class="col s12" action="{{ route('pizza.store') }}" method="POST">
                     @csrf
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col-12 col-md-6">
                             <input id="name" name="name" type="text" class="validate">
                             <label for="name">Name</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col-12 col-md-6">
                             <select name="type" id="type">
                               <option value="" disabled selected>Choose your option</option>
                               <option value="hawaiian">Hawaiian</option>
@@ -24,7 +24,7 @@
                             </select>
                             <label>Pizza Type</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col-12 col-md-6">
                             <select name="base" id="base">
                               <option value="" disabled selected>Choose your option</option>
                               <option value="cheesy crust">Cheesy Crust</option>
@@ -34,7 +34,7 @@
                             </select>
                             <label>Base Type</label>
                         </div>
-                        <div class="col s12">
+                        <div class="col-12">
                             <label class="col s3">
                                 <input type="checkbox" name="toppings[]" value="mushrooms" />
                                 <span>Mushrooms</span>

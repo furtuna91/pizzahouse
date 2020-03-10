@@ -18,7 +18,7 @@
 
         <div class="container">
             <div class="row valign-wrapper center-align">
-                <div class="col s4 offset-s4">
+                <div class="col col-md-4 mx-auto">
                     <img src="{{ asset('/img/pizzahouse.jpg') }}" class="responsive-img" alt="pizza house logo">
                 </div>
             </div>

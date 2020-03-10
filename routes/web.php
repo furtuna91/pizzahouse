@@ -13,5 +13,9 @@
 
 Route::get('/', function () {
     return view('welcome');
-})->name('home');
+});
 Route::resource('pizza', 'PizzaController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -3,18 +3,10 @@
 @section('content')
     <div class="flex-center full-height">
         <div class="container">
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="col s12">
-                        <a href="{{ route('pizza.index') }}" class="breadcrumb">Pizzas</a>
-                        <a href="#!" class="breadcrumb">Pizza</a>
-                    </div>
-                </div>
-            </nav>
             <h1 class="center-align">Pizza List</h1>
             <div class="divider"></div>
             <div class="row">
-                <div class="col s12 m6 offset-m3">
+                <div class="col-12 col-md-6 mx-auto">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator responsive-img" src="{{ asset('img/pizza.jpg') }}">
