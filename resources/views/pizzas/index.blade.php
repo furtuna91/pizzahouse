@@ -5,6 +5,9 @@
         <div class="container">
             <h1 class="center-align">Pizza List</h1>
             <div class="divider"></div>
+            @if ( null !== session('msg') )
+                <div class="card-panel green">{{ session('msg') }}</div>
+            @endif
             <ul class="collection with-header">
                 <li class="collection-header"><h4>Pizzas</h4></li>
                 @foreach ($pizzas as $pizza)

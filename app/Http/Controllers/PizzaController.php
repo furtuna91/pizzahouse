@@ -96,5 +96,7 @@ class PizzaController extends Controller
     public function destroy(Pizza $pizza)
     {
         //
+        $pizza->delete();
+        return redirect()->route('pizza.index')->with('msg', 'Order Complete');
     }
 }
